@@ -1,0 +1,86 @@
+* {
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+html{
+    background-color: #c17400;
+    color: rgb(16, 8, 8);
+}
+.logo{
+    /* width: 1.5rem; */
+    height: 2.25rem;
+}
+.menu{
+    background-color: yellow;
+    border: 2px red;
+    border-radius:10px;
+    height: 3.125rem;
+    width:99%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.225rem auto;
+    
+}
+.searchBar{
+    border-radius: 5px;
+    height: 2.25rem;
+    width: 15rem;
+    font-size: 1.5rem;
+}
+ul {
+    margin: 0.5rem;
+    padding:0;
+}
+.pokemon-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.pokemon {
+    list-style-position: unset;
+    list-style-type: none;
+    width: 30%;
+    height: 20rem;
+    
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+    padding: 0.225rem;
+    background-color: yellow;
+    border: 5px rgb(255, 60, 0);
+    border-radius: 5px;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+.pagination {
+    display: inline-block;
+}
+.pagination a{
+    font-size: 2rem;
+    color: yellow;
+    text-decoration: none;
+}
+.pagination a:hover{
+    color: rgb(255, 255, 255);
+    border: 2px yellow;
+    border-radius: 100%;
+}
